@@ -110,31 +110,29 @@
 			
 			<Tab fx:id="editTab" text=" Edit " closable="False">
 				<GridPane hgap="10" vgap="10">
-				
-			    <Label text="Sample:"
-			        GridPane.columnIndex="0" GridPane.rowIndex="1"/>			 
-			    <TextField fx:id="sampleID" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
-			    
-			    <Label text="Sample:"
-			        GridPane.columnIndex="0" GridPane.rowIndex="2"/>			 	
-			    <ComboBox fx:id="comboSample" GridPane.columnIndex="1" GridPane.rowIndex="2">
-			      <items>
-			        <FXCollections fx:factory="observableArrayList">
-			          <String fx:value="Y" />
-			          <String fx:value="N" />
-			        </FXCollections>
-			      </items>
-			    </ComboBox>
-			    
-			    <HBox spacing="10" GridPane.columnSpan="2" GridPane.columnIndex="0" GridPane.rowIndex="3">
 
-						
+					<Label text="Sample:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+					<TextField fx:id="sampleID" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+			    
+					<Label text="Sample:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+					<ComboBox fx:id="comboSample" GridPane.columnIndex="1" GridPane.rowIndex="2">
+					  <items>
+						<FXCollections fx:factory="observableArrayList">
+						  <String fx:value="Y" />
+						  <String fx:value="N" />
+						</FXCollections>
+					  </items>
+					</ComboBox>
+
+					<HBox spacing="10" GridPane.columnSpan="2" GridPane.columnIndex="0" GridPane.rowIndex="3">
+
+
 						<Button fx:id="commitButton" text="Commit" onAction="#commitEventHandler" disable="true"/>
 
-						
+
 						<Button fx:id="editButton" text="Edit" onAction="#editEventHandler" />
 
-				</HBox>
+					</HBox>
 			    
 				</GridPane>
 				
